@@ -1002,6 +1002,18 @@ config MACH_SERRANO_VZW
 	help
 	  Support for the Samsung Serrano device.
 
+config MACH_EXPRESS
+	depends on ARCH_MSM8930
+	bool "MSM8930 EXPRESS"
+	help
+	  Support for the Samsung Express device.
+
+config MACH_EXPRESS_EUR_LTE
+	depends on MACH_EXPRESS
+	bool "MSM8930 EXPRESS EUR LTE"
+	help
+	  Support for the Samsung Express device.
+
 config MACH_CANE
         depends on ARCH_MSM8930
         bool "MSM8930 CANE"

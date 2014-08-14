@@ -285,6 +285,7 @@ obj-$(CONFIG_MACH_MSM8930_FLUID) += board-8930-all.o board-8930-regulator-pm8038
 obj-$(CONFIG_MACH_MSM8930_EVT) += board-8930-all.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o
 obj-$(CONFIG_MACH_MELIUS) += board-melius.o board-s5000-tsp_msm8930.o board-8930-camera-power.o board-8930-camera.o board-8930-display.o board-8930-pmic.o board-8930-storage.o board-melius-gpiomux.o devices-8930.o board-8930-gpu.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o
 obj-$(CONFIG_MACH_CANE) += board-cane.o board-8930-camera-power.o board-8930-camera.o board-8930-display.o board-8930-pmic.o board-8930-storage.o board-cane-gpiomux.o devices-8930.o board-8930-gpu.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o
+obj-$(CONFIG_MACH_EXPRESS) += board-express.o board-8930-camera-power.o board-8930-camera.o board-8930-display.o board-8930-pmic.o board-8930-storage.o board-express-gpiomux.o devices-8930.o board-8930-gpu.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o board-8930-input-mxt.o board-8930-input-tkey.o
 obj-$(CONFIG_MACH_SERRANO) += board-serrano.o board-8930-camera.o board-8930-camera-power.o board-8930-display.o board-8930-pmic.o board-8930-storage.o board-serrano-gpiomux.o devices-8930.o board-8930-gpu.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o board-8930-input-mxt.o board-8930-input-tkey-serrano.o
 obj-$(CONFIG_MACH_GOLDEN) += board-golden.o board-8930-camera.o board-8930-camera-power.o board-8930-display.o board-8930-pmic.o board-8930-storage.o board-golden-gpiomux.o devices-8930.o board-8930-gpu.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o board-8930-input-mxt.o  board-8930-input-tkey.o
 obj-$(CONFIG_MACH_LT02) += board-lt02.o board-8930-camera-power.o board-8930-camera.o board-8930-display.o board-8930-pmic.o board-8930-storage.o board-lt02-gpiomux.o devices-8930.o board-8930-gpu.o board-8930-regulator-pm8038.o board-8930-regulator-pm8917.o  board-8930-input-zinitix.o board-lt02-battery.o
@@ -300,6 +301,9 @@ obj-$(CONFIG_TOUCHSCREEN_CYPRESS_TMA46X)	+=board-touch-cyttsp4_core.o
 ifdef CONFIG_MACH_CANE
 obj-$(CONFIG_CHARGER_MAX77XXX) += board-cane-battery.o
 obj-$(CONFIG_PM8921_BMS) += bms-batterydata-cane.o bms-batterydata-cane2.o
+endif
+ifdef CONFIG_MACH_EXPRESS
+	obj-$(CONFIG_PM8921_BMS) += bms-batterydata-express.o
 endif
 ifdef CONFIG_MACH_WILCOX_EUR_LTE
 obj-$(CONFIG_CHARGER_MAX77XXX) += board-wilcox-battery.o

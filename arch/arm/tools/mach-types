@@ -1053,6 +1053,7 @@ melius			MACH_MELIUS		MELIUS			3727
 cane			MACH_CANE		CANE			3727
 golden                  MACH_GOLDEN             GOLDEN                  3727
 lt02			MACH_LT02		LT02			3727
+express2                MACH_EXPRESS2           EXPRESS2                3727
 msm8930_mtp		MACH_MSM8930_MTP	MSM8930_MTP		3728
 msm8930_fluid		MACH_MSM8930_FLUID	MSM8930_FLUID		3729
 ltu11			MACH_LTU11		LTU11			3730
