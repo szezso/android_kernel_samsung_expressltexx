@@ -96,6 +96,7 @@ obj-$(CONFIG_FB_MSM_MIPI_DSI_TRULY) += mipi_truly.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_NT35510) += mipi_NT35510.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_NT35516) += mipi_truly_tft540960_1_e.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_NT35590) += mipi_NT35590.o
+obj-$(CONFIG_FB_MSM_MIPI_MAGNA_OLED_VIDEO_WVGA_PT) += mipi_magna_oled_video_wvga_pt.o smart_mtp_ea8868.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_SIMULATOR) += mipi_simulator.o
 ifeq ($(CONFIG_SEC_PRODUCT_8960),y)
 obj-$(CONFIG_FB_MSM_MIPI_DSI_SAMSUNG_OLED) += mipi_samsung_oled-8960.o
