@@ -5790,9 +5790,8 @@ static struct clk_lookup msm_clocks_8960_common[] __initdata = {
 	CLK_LOOKUP("core_clk",		gsbi7_qup_clk.c,	""),
 	CLK_LOOKUP("core_clk",		gsbi8_qup_clk.c,	"qup_i2c.8"),
 	CLK_LOOKUP("core_clk",		gsbi9_qup_clk.c,	""),
-	CLK_LOOKUP("core_clk",		gsbi10_qup_clk.c,	"qup_i2c.10"),
-#ifdef CONFIG_S5C73M3
-	CLK_LOOKUP("core_clk",		gsbi11_qup_clk.c,	"spi_qsd.0"),
+#ifdef CONFIG_MACH_EXPRESS
+	CLK_LOOKUP("core_clk",		gsbi11_qup_clk.c,	"qup_i2c.11"),
 #else
 	CLK_LOOKUP("core_clk",		gsbi11_qup_clk.c,	""),
 #endif
@@ -6189,7 +6188,9 @@ static struct clk_lookup msm_clocks_8930[] = {
 	CLK_LOOKUP("core_clk",		gsbi7_qup_clk.c,	""),
 	CLK_LOOKUP("core_clk",		gsbi8_qup_clk.c,	"qup_i2c.8"),
 	CLK_LOOKUP("core_clk",		gsbi9_qup_clk.c,	"qup_i2c.0"),
+#ifdef CONFIG_MACH_EXPRESS
 	CLK_LOOKUP("core_clk",		gsbi10_qup_clk.c,	"qup_i2c.10"),
+#endif
 #ifdef CONFIG_2MIC_QUP_I2C
 #ifdef CONFIG_2MIC_QUP_I2C_GSBI11
 	CLK_LOOKUP("core_clk",		gsbi11_qup_clk.c,	"qup_i2c.11"),
@@ -6276,6 +6277,9 @@ static struct clk_lookup msm_clocks_8930[] = {
 	CLK_LOOKUP("iface_clk",		gsbi9_p_clk.c,		"qup_i2c.0"),
 	CLK_LOOKUP("iface_clk",		gsbi10_p_clk.c,		"qup_i2c.10"),
 	/* used on 8930 SGLTE for serial console */
+#ifdef CONFIG_MACH_EXPRESS
+	CLK_LOOKUP("iface_clk",		gsbi11_p_clk.c,		"qup_i2c.11"),
+	#endif
 #ifdef CONFIG_2MIC_QUP_I2C
 #ifdef CONFIG_2MIC_QUP_I2C_GSBI11
 	CLK_LOOKUP("iface_clk",		gsbi11_p_clk.c,	"qup_i2c.11"),
@@ -6315,7 +6319,11 @@ static struct clk_lookup msm_clocks_8930[] = {
 	CLK_LOOKUP("cam_clk",		cam2_clk.c,		NULL),
 	CLK_LOOKUP("cam_clk",		cam0_clk.c,	"4-0056"),
 	CLK_LOOKUP("cam_clk",		cam0_clk.c,	"4-003d"),
+#if defined(CONFIG_MACH_EXPRESS) ||defined (CONFIG_MACH_LT02_CHN_CTC)
 	CLK_LOOKUP("cam_clk",		cam0_clk.c,	"4-0020"),
+#else
+	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"4-0020"),
+#endif
 	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"4-0030"),
 	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"4-0028"),
 	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"4-0010"),

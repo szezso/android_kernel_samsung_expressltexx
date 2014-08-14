@@ -113,7 +113,7 @@
 
 
 #include <linux/i2c-gpio.h>
-#include <mach/msm8930-gpio.h>
+#include <mach/express-gpio.h>
 #ifdef CONFIG_USB_SWITCH_TSU6721
 #include <linux/i2c/tsu6721.h>
 #include <linux/switch.h>

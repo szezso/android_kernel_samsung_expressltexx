@@ -37,8 +37,6 @@
 #include <mach/golden-gpio.h>
 #elif defined(CONFIG_MACH_JASPER2)
 #include <mach/jasper2-gpio.h>
-#elif defined(CONFIG_MACH_EXPRESS)
-#include <mach/express-gpio.h>
 #elif defined(CONFIG_MACH_GODIVA)
 #include <mach/godiva-gpio.h>
 #elif defined(CONFIG_MACH_STUNNER)
