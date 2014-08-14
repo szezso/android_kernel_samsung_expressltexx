@@ -14,6 +14,7 @@
 extern struct class *sec_class;
 extern int ISSP_main(void);
 extern int get_lcd_attached(void);
+extern unsigned int system_rev;
 
 /* DVFS feature : TOUCH BOOSTER */
 #define TSP_BOOSTER
@@ -53,6 +54,7 @@ struct cypress_touchkey_platform_data {
 	unsigned	gpio_int;
 	unsigned	gpio_led_en;
 	const u8	*touchkey_keycode;
+	void (*touchkey_led_en)(bool);
 	void	(*power_onoff) (int);
 	bool	skip_fw_update;
 	bool	touchkey_order;

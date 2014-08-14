@@ -23,7 +23,7 @@
 #define MSM_SSBI2_I2C_BUS_ID     7
 #define MSM_SSBI3_I2C_BUS_ID     8
 
-#if defined(CONFIG_MACH_SERRANO)
+#if defined (CONFIG_MACH_EXPRESS) || defined(CONFIG_MACH_SERRANO)
 #define MSM_GEO_I2C_BUS_ID	11
 #endif
 

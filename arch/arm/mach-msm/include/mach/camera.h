@@ -751,7 +751,7 @@ enum msm_bus_perf_setting {
 #endif
 	S_DUAL,
 	S_LOW_POWER,
-#if defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_SERRANO)  || defined(CONFIG_MACH_GOLDEN) || defined(CONFIG_MACH_LT02) || defined(CONFIG_MACH_CANE)
+#if defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_EXPRESS)  || defined(CONFIG_MACH_SERRANO)  || defined(CONFIG_MACH_GOLDEN) || defined(CONFIG_MACH_LT02) || defined(CONFIG_MACH_CANE)
 /*Start : shchang@qualcomm.com : 1101*/
 	S_ADV_VIDEO,
 /*End : shchang@qualcomm.com : 1101*/

@@ -25,6 +25,8 @@
 #include <mach/melius-gpio.h>
 #elif defined(CONFIG_MACH_EXPRESS2)
 #include <mach/express2-gpio.h>
+#elif defined(CONFIG_MACH_EXPRESS)
+#include <mach/express-gpio.h>
 #elif defined(CONFIG_MACH_HIGGS)
 #include <mach/higgs-gpio.h>
 #elif defined(CONFIG_MACH_CRATER)

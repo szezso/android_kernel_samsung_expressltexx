@@ -61,7 +61,7 @@ struct msm_camera_device_platform_data {
 	struct msm_camera_io_ext ioext;
 	struct msm_camera_io_clk ioclk;
 	uint8_t csid_core;
-#if defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_SERRANO) || defined(CONFIG_MACH_GOLDEN) || defined(CONFIG_SEC_PRODUCT_8960) || defined(CONFIG_MACH_LT02)|| defined(CONFIG_MACH_CANE)
+#if defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_EXPRESS) || defined(CONFIG_MACH_SERRANO) || defined(CONFIG_MACH_GOLDEN) || defined(CONFIG_SEC_PRODUCT_8960) || defined(CONFIG_MACH_LT02)|| defined(CONFIG_MACH_CANE)
 	uint8_t is_csiphy;
 	uint8_t is_csic;
 	uint8_t is_csid;
@@ -291,7 +291,7 @@ enum msm_camera_vreg_name_t {
 	CAM_VANA,
 	CAM_VAF,
 };
-#if defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_GOLDEN) || defined(CONFIG_MACH_SERRANO) || defined(CONFIG_MACH_LT02) || defined(CONFIG_MACH_CANE)
+#if defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_GOLDEN) || defined(CONFIG_MACH_EXPRESS) || defined(CONFIG_MACH_SERRANO) || defined(CONFIG_MACH_LT02) || defined(CONFIG_MACH_CANE)
 struct msm_camera_sensor_platform_info {
 	int mount_angle;
 	int sensor_reset;
@@ -412,7 +412,7 @@ struct msm_eeprom_info {
 	int eeprom_reg_addr;
 	int eeprom_read_length;
 	int eeprom_i2c_slave_addr;
-#if defined(CONFIG_MACH_JACTIVE_ATT) || defined(CONFIG_MACH_JACTIVE_EUR) || defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_SERRANO) || defined(CONFIG_MACH_LT02)
+#if defined(CONFIG_MACH_JACTIVE_ATT) || defined(CONFIG_MACH_JACTIVE_EUR) || defined(CONFIG_MACH_MELIUS) || defined(CONFIG_MACH_SERRANO) || defined(CONFIG_MACH_EXPRESS) || defined(CONFIG_MACH_LT02)
 	enum msm_eeprom_type type;
 #endif
 };

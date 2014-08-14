@@ -17,6 +17,7 @@ obj-$(CONFIG_TOUCHSCREEN_MXTS)	+= mxts_msm8930.o
 else
 obj-$(CONFIG_TOUCHSCREEN_MXTS)	+= mxts.o
 endif
+obj-$(CONFIG_TOUCHSCREEN_MXT224S)	+= mxt224s.o
 obj-$(CONFIG_TOUCHSCREEN_ATMEL_MAXTOUCH)	+= atmel_maxtouch.o
 obj-$(CONFIG_TOUCHSCREEN_ATMEL_MXT)	+= atmel_mxt_ts.o
 obj-$(CONFIG_TOUCHSCREEN_ATMEL_TSADCC)	+= atmel_tsadcc.o

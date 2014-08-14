@@ -139,6 +139,7 @@ fw-shipped-$(CONFIG_USB_SERIAL_KEYSPAN_PDA) += keyspan_pda/keyspan_pda.fw
 fw-shipped-$(CONFIG_USB_SERIAL_XIRCOM) += keyspan_pda/xircom_pgs.fw
 fw-shipped-$(CONFIG_USB_VICAM) += vicam/firmware.fw
 fw-shipped-$(CONFIG_VIDEO_CPIA2) += cpia2/stv0672_vp4.bin
+fw-shipped-$(CONFIG_TOUCHSCREEN_MXT224S) += touchscreen/mxt224s.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_MXT224S_NEW) += tsp_atmel/mxt224s_Golden.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_MXT336S) += tsp_atmel/mxt336s_Serrano.fw
 fw-shipped-$(CONFIG_KEYBOARD_TC360_TOUCHKEY) += coreriver/tc360.fw

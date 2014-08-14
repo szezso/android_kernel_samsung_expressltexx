@@ -93,6 +93,7 @@ obj-$(CONFIG_MACH_LT02_SPR) += mipi_tc358764_dsi2lvds.o mipi_ql_dsi2lvds.o
 obj-$(CONFIG_MACH_LT02_ATT) += mipi_tc358764_dsi2lvds.o mipi_ql_dsi2lvds.o
 obj-$(CONFIG_MACH_LT02_TMO) += mipi_tc358764_dsi2lvds.o mipi_ql_dsi2lvds.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_TRULY) += mipi_truly.o
+obj-$(CONFIG_FB_MSM_MIPI_DSI_MAGNA_OLED) += mipi_magna_oled.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_NT35510) += mipi_NT35510.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_NT35516) += mipi_truly_tft540960_1_e.o
 obj-$(CONFIG_FB_MSM_MIPI_DSI_NT35590) += mipi_NT35590.o

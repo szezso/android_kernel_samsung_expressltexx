@@ -166,6 +166,20 @@ config TOUCHSCREEN_ATMEL_MXT
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called atmel_mxt_ts.
+
+config TOUCHSCREEN_MXT224S
+	tristate "Atmel MaxTouch 224S"
+	depends on I2C
+	default n
+	help
+	  Say Y here to enable support for the Atmel MaxTouch 224 touch
+	  controller.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called mxt224S.
+
 config TOUCHSCREEN_MXT224S_NEW
 	tristate "Atmel MaxTouch 224S new"
 	depends on I2C

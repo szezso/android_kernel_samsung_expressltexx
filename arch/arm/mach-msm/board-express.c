@@ -113,7 +113,7 @@
 
 
 #include <linux/i2c-gpio.h>
-#include <mach/express-gpio.h>
+#include <mach/msm8930-gpio.h>
 #ifdef CONFIG_USB_SWITCH_TSU6721
 #include <linux/i2c/tsu6721.h>
 #include <linux/switch.h>
@@ -2675,8 +2675,6 @@ static struct i2c_board_info sii_device_info[] __initdata = {
 };
 #endif /*CONFIG_FB_MSM_HDMI_MHL_8334*/
 
-#ifdef MSM8930_PHASE_2
-
 #ifdef CONFIG_KEYBOARD_GPIO
 static struct gpio_keys_button gpio_keys_button[] = {
 	{
@@ -3041,7 +3039,6 @@ static int get_sec_gnd_jack_state(void)
 
 	return status^1;
 }
-#endif
 
 static int get_sec_det_jack_state(void)
 {
@@ -3052,6 +3049,7 @@ static int get_sec_det_jack_state(void)
 
 	return status^1;
 }
+#endif
 
 static int get_sec_send_key_state(void)
 {

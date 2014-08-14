@@ -26,7 +26,7 @@ struct pm8xxx_charger_core_data {
 	unsigned int	batt_id_channel;
 };
 
-#if defined(CONFIG_MACH_SERRANO)|| defined(CONFIG_MACH_GOLDEN_VZW) || defined(CONFIG_MACH_LT02) || defined(CONFIG_MACH_GOLDEN_ATT) || defined(CONFIG_MACH_CANE)
+#if defined(CONFIG_MACH_EXPRESS)|| defined(CONFIG_MACH_SERRANO)|| defined(CONFIG_MACH_GOLDEN_VZW) || defined(CONFIG_MACH_LT02) || defined(CONFIG_MACH_GOLDEN_ATT) || defined(CONFIG_MACH_CANE)
 enum cable_type_t {
 	CABLE_TYPE_NONE = 0,
 	CABLE_TYPE_USB,

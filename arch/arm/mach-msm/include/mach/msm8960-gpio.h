@@ -61,8 +61,6 @@
 #include <mach/kona-gpio.h>
 #elif defined(CONFIG_MACH_COMANCHE)
 #include <mach/comanche-gpio.h>
-#elif defined(CONFIG_MACH_EXPRESS)
-#include <mach/express-gpio.h>
 #elif defined(CONFIG_MACH_ACCELERATE)
 #include <mach/accelerate-gpio.h>
 #elif defined(CONFIG_MACH_STRETTO)

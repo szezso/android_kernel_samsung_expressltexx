@@ -26,9 +26,9 @@
 #define MIN 1
 struct taos_platform_data {
 	int als_int;
-	void (*power)(int);
+	void (*power)(bool);
 	int (*light_adc_value)(void);
-	void (*led_on)(int);
+	void (*led_on)(bool);
 	int prox_thresh_hi;
 	int prox_thresh_low;
 	int prox_th_hi_cal;

@@ -2852,7 +2852,7 @@ static int mdp_probe(struct platform_device *pdev)
 #if defined(CONFIG_FB_MSM_MIPI_DSI) && defined(CONFIG_FB_MSM_MDP40)
 	struct mipi_panel_info *mipi;
 #endif
-#if !defined(CONFIG_MACH_MELIUS) && !defined(CONFIG_MACH_SERRANO) && !defined(CONFIG_MACH_GOLDEN) && !defined(CONFIG_MACH_LT02) && !defined(CONFIG_MACH_WILCOX_EUR_LTE)
+#if !defined(CONFIG_MACH_MELIUS) && !defined(CONFIG_MACH_SERRANO) && !defined(CONFIG_MACH_EXPRESS) && !defined(CONFIG_MACH_GOLDEN) && !defined(CONFIG_MACH_LT02) && !defined(CONFIG_MACH_WILCOX_EUR_LTE)
 	static int contSplash_update_done;
 #endif
 	if ((pdev->id == 0) && (pdev->num_resources > 0)) {
@@ -2924,7 +2924,7 @@ static int mdp_probe(struct platform_device *pdev)
 	mfd->vsync_init = NULL;
 
 	if (mdp_pdata) {
-#if !defined (CONFIG_MACH_MELIUS) && !defined(CONFIG_MACH_SERRANO) && !defined(CONFIG_MACH_GOLDEN) && !defined(CONFIG_MACH_LT02) && !defined(CONFIG_MACH_WILCOX_EUR_LTE)
+#if !defined (CONFIG_MACH_MELIUS) && !defined(CONFIG_MACH_SERRANO) && !defined(CONFIG_MACH_EXPRESS) && !defined(CONFIG_MACH_GOLDEN) && !defined(CONFIG_MACH_LT02) && !defined(CONFIG_MACH_WILCOX_EUR_LTE)
 		if ((get_lcd_attached()) && mdp_pdata->cont_splash_enabled) {
 			mfd->cont_splash_done = 0;
 			if (!contSplash_update_done) {
@@ -2968,7 +2968,7 @@ static int mdp_probe(struct platform_device *pdev)
 		rc = -ENOMEM;
 		goto mdp_probe_err;
 	}
-#if defined (CONFIG_MACH_MELIUS) || defined (CONFIG_MACH_SERRANO) || defined (CONFIG_MACH_GOLDEN) || defined (CONFIG_MACH_LT02) || defined(CONFIG_MACH_WILCOX_EUR_LTE)
+#if defined (CONFIG_MACH_MELIUS) || defined (CONFIG_MACH_SERRANO) ||  defined (CONFIG_MACH_EXPRESS) ||defined (CONFIG_MACH_GOLDEN) || defined (CONFIG_MACH_LT02) || defined(CONFIG_MACH_WILCOX_EUR_LTE)
 
 	if (mdp_pdata) {
 #if defined (CONFIG_FB_MSM_MIPI_SAMSUNG_OLED_VIDEO_QHD_PT)

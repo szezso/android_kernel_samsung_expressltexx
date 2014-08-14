@@ -235,6 +235,11 @@ config FB_MSM_MIPI_DSI_NT35510
 	bool
 	select FB_MSM_MIPI_DSI
 
+config FB_MSM_MIPI_DSI_MAGNA_OLED
+	bool
+	select FB_MSM_MIPI_DSI
+	default n
+
 config FB_MSM_MIPI_DSI_HIMAX_TFT
 	bool
 	select FB_MSM_MIPI_DSI
