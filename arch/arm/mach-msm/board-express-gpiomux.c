@@ -144,6 +144,8 @@ static struct gpiomux_setting wcnss_5wire_active_cfg = {
 	.pull = GPIOMUX_PULL_DOWN,
 };
 
+/*
+
 static struct gpiomux_setting atmel_resout_sus_cfg = {
 	.func = GPIOMUX_FUNC_GPIO,
 	.drv = GPIOMUX_DRV_6MA,
@@ -167,6 +169,7 @@ static struct gpiomux_setting atmel_ldo_en_act_cfg = {
 	.drv = GPIOMUX_DRV_6MA,
 	.pull = GPIOMUX_PULL_DOWN,
 };
+*/
 
 static struct gpiomux_setting atmel_int_act_cfg = {
 	.func = GPIOMUX_FUNC_GPIO,
@@ -421,12 +424,6 @@ static struct msm_gpiomux_config msm8960_gsbi_configs[] __initdata = {
 #ifndef CONFIG_USB_SWITCH_TSU6721
 	{
 		.gpio      = 73,	/* GSBI10 I2C QUP SDA */
-		.settings = {
-			[GPIOMUX_SUSPENDED] = &gsbi10,
-		},
-	},
-	{
-		.gpio      = 74,	/* GSBI10 I2C QUP SCL */
 		.settings = {
 			[GPIOMUX_SUSPENDED] = &gsbi10,
 		},
@@ -731,20 +728,6 @@ static struct msm_gpiomux_config msm8960_atmel_configs[] __initdata = {
 		.settings = {
 			[GPIOMUX_ACTIVE]    = &atmel_int_act_cfg,
 			[GPIOMUX_SUSPENDED] = &atmel_int_sus_cfg,
-		},
-	},
-	{	/* TS LDO ENABLE */
-		.gpio = 50,
-		.settings = {
-			[GPIOMUX_ACTIVE]    = &atmel_ldo_en_act_cfg,
-			[GPIOMUX_SUSPENDED] = &atmel_ldo_en_sus_cfg,
-		},
-	},
-	{	/* TS RESOUT */
-		.gpio = 52,
-		.settings = {
-			[GPIOMUX_ACTIVE]    = &atmel_resout_act_cfg,
-			[GPIOMUX_SUSPENDED] = &atmel_resout_sus_cfg,
 		},
 	},
 };
